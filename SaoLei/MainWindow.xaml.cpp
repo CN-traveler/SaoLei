@@ -38,14 +38,6 @@ namespace winrt::SaoLei::implementation
     int map_num;
     // 地图数组 -1 雷 / 0-9 周围雷数
     int** map;
-    // 通过索引获取地图数组值
-    int getValue(long& map, int index) {
-        return (map >> index) % 2;
-    }
-    // 通过坐标获取地图数组值
-    int getValue(long& map, int x, int y) {
-        return getValue(map, y * map_width + x);
-    }
     // 随机交换地图数组的值到指定坐标
     void map_swap(int x, int y) {
         int rx = rand() % map_width;
