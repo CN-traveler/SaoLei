@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <NavigationView PaneOpening="visibleFooterPane" PaneClosing="collapsedFooterPane" SelectionChanged="change_difficulty" IsPaneOpen="True" PaneDisplayMode="Left" IsBackEnabled="False" IsBackButtonVisible="Collapsed" IsSettingsVisible="False">
+    <NavigationView SelectionChanged="change_difficulty" IsPaneOpen="True" PaneDisplayMode="Left" IsBackEnabled="False" IsBackButtonVisible="Collapsed" IsSettingsVisible="False">
         <NavigationView.PaneTitle>游戏难度</NavigationView.PaneTitle>
         <NavigationView.MenuItems>
             <NavigationViewItem x:Name="easy" IsSelected="True" Icon="OneBar" Content="简单" />
