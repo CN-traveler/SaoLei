@@ -36,7 +36,7 @@ namespace winrt::SaoLei::implementation
     int map_height;
     // 地图雷数
     int map_num;
-    // 地图数组 -1 雷 / 0-9 周围雷数
+    // 地图数组 -1 雷 / 0-8 周围雷数
     int** map;
     // 随机交换地图数组的值到指定坐标
     void map_swap(int x, int y) {
@@ -122,7 +122,6 @@ namespace winrt::SaoLei::implementation
                         }
                     }
                 }
-                //button.Content(box_value(map[i][j]));
                 button.Name(to_hstring(i * map_width + j));
                 Color ccc = Color();
                 ccc.A = 127;
